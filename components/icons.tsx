@@ -6,6 +6,7 @@ import {
   ChevronRight,
   Command,
   CreditCard,
+  Edit,
   File,
   FileText,
   HelpCircle,
@@ -46,6 +47,7 @@ export const Icons = {
   pizza: Pizza,
   sun: SunMedium,
   moon: Moon,
+  edit: Edit,
   laptop: Laptop,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
