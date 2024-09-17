@@ -60,10 +60,16 @@ export default function SpeciesCard({
       <div className="mt-2 flex flex-col gap-2">
         <SpeciesMoreInfoDialog species={species} />
 
-        {
-          //idk why there is an error
-          isAuthor && <SpeciesFormDialog userId={userId} species={species} mode="edit" />
-        }
+        {isAuthor && (
+          <SpeciesFormDialog
+            userId={userId}
+            species={{
+              ...species,
+              endangered: species.endangered ? "Yes" : "No",
+            }}
+            mode="edit"
+          />
+        )}
       </div>
     </div>
   );
